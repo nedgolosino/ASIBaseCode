@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ASI.Basecode.Resources.Views.Home
+namespace ASI.Basecode.Resources.Views
 {
-    internal class Index
+    internal class Class1
     {
     }
 }
