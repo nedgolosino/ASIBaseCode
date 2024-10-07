@@ -18,9 +18,11 @@ namespace ASI.Basecode.Data
         }
 
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Expense> Expenses { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // User Entity Configuration
             modelBuilder.Entity<User>(entity =>
             {
                 entity.HasIndex(e => e.UserId, "UQ__Users__1788CC4D5F4A160F")
@@ -54,6 +56,34 @@ namespace ASI.Basecode.Data
                     .IsRequired()
                     .HasMaxLength(50)
                     .IsUnicode(false);
+            });
+
+            // Expense Entity Configuration
+            modelBuilder.Entity<Expense>(entity =>
+            {
+                entity.HasKey(e => e.ExpenseId);
+
+                entity.Property(e => e.ExpenseId)
+                    .HasColumnName("ExpenseId")
+                    .ValueGeneratedOnAdd();
+
+                entity.Property(e => e.Title)
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Category)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Amount)
+                    .HasColumnType("decimal(18,2)")
+                    .IsRequired();
+
+                entity.Property(e => e.Date)
+                    .HasColumnType("datetime")
+                    .IsRequired();
             });
 
             OnModelCreatingPartial(modelBuilder);

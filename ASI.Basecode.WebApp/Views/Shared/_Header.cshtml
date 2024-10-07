@@ -6,11 +6,14 @@
         <img src="~/img/asi-logo-invert.svg"
              style="width: 185px;" alt="logo"
              onclick="window.location.href = '@Url.Action("Index", "Home")';">
-
-        <!-- Add button styling and link to ExpenseTable.cshtml -->
+        <a href="@Url.Action("Index", "Expense")" class="btn btn-primary ml-3">
+            Home
+        </a>
+      
         <a href="@Url.Action("ExpenseTable", "Expense")" class="btn btn-primary ml-3">
             Expenses
         </a>
+        
     </div>
     <div class="logosec">
         @HttpContextAccessor.HttpContext.Session.GetString("UserName")
