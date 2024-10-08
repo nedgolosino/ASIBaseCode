@@ -4,6 +4,7 @@ using ASI.Basecode.WebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
+using System.Linq;
 
 namespace ASI.Basecode.WebApp.Controllers
 {
@@ -18,11 +19,22 @@ namespace ASI.Basecode.WebApp.Controllers
             _logger = logger;
         }
 
+        private string GetLoggedInUserId()
+        {
+            return HttpContext.User.Identity.Name;
+        }
+
+
         public IActionResult Index()
         {
             try
             {
-                var expenses = _expenseService.GetAllExpenses();
+                string userId = GetLoggedInUserId();
+
+                var expenses = _expenseService.GetAllExpenses()
+                                    .Where(e => e.UserName == userId) 
+                                    .ToList();
+
                 return View(expenses);
             }
             catch (Exception ex)
@@ -36,32 +48,43 @@ namespace ASI.Basecode.WebApp.Controllers
         {
             try
             {
-                var expenses = _expenseService.GetAllExpenses();
+                string userId = GetLoggedInUserId();
+
+      
+                var expenses = _expenseService.GetAllExpenses()
+                                    .Where(e => e.UserName == userId) // Filter by the current user's ID
+                                    .ToList();
+
                 return View(expenses);
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Failed to load expenses.");
+                _logger.LogError(ex, "Failed to load expense table.");
                 return View("Error", new ErrorViewModel { ErrorMessage = "Failed to load expense table." });
             }
         }
 
+  
         public IActionResult Create()
         {
             return View();
         }
 
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(Expense model)
         {
-            if (ModelState.IsValid) 
+            if (ModelState.IsValid)
             {
                 try
                 {
+              
+                    model.UserName = GetLoggedInUserId();
+
                     _expenseService.AddExpense(model);
                     TempData["SuccessMessage"] = "Expense added successfully!";
-                    return RedirectToAction(nameof(ExpenseTable)); // Redirect to ExpenseTable after successful addition
+                    return RedirectToAction(nameof(ExpenseTable)); 
                 }
                 catch (Exception ex)
                 {
@@ -69,20 +92,22 @@ namespace ASI.Basecode.WebApp.Controllers
                     TempData["ErrorMessage"] = "Failed to add new expense. Please try again.";
                 }
             }
-
             return View(model);
         }
+
+    
         public IActionResult Edit(int id)
         {
             var expense = _expenseService.GetExpenseById(id);
-            if (expense == null)
+            if (!HasAccessToExpense(expense))
             {
-                TempData["ErrorMessage"] = "Expense not found.";
+                TempData["ErrorMessage"] = "Expense not found or access denied.";
                 return RedirectToAction(nameof(ExpenseTable));
             }
             return View(expense);
         }
 
+  
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(Expense model)
@@ -91,6 +116,12 @@ namespace ASI.Basecode.WebApp.Controllers
             {
                 try
                 {
+                    if (!HasAccessToExpense(model))
+                    {
+                        TempData["ErrorMessage"] = "Access denied.";
+                        return RedirectToAction(nameof(ExpenseTable));
+                    }
+
                     _expenseService.UpdateExpense(model);
                     TempData["SuccessMessage"] = "Expense updated successfully!";
                     return RedirectToAction(nameof(ExpenseTable));
@@ -104,6 +135,7 @@ namespace ASI.Basecode.WebApp.Controllers
             return View(model);
         }
 
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(int id)
@@ -111,9 +143,9 @@ namespace ASI.Basecode.WebApp.Controllers
             try
             {
                 var expense = _expenseService.GetExpenseById(id);
-                if (expense == null)
+                if (!HasAccessToExpense(expense))
                 {
-                    TempData["ErrorMessage"] = "Expense not found.";
+                    TempData["ErrorMessage"] = "Expense not found or access denied.";
                     return RedirectToAction(nameof(ExpenseTable));
                 }
 
@@ -129,15 +161,22 @@ namespace ASI.Basecode.WebApp.Controllers
             }
         }
 
+
         public IActionResult Details(int id)
         {
             var expense = _expenseService.GetExpenseById(id);
-            if (expense == null)
+            if (!HasAccessToExpense(expense))
             {
-                TempData["ErrorMessage"] = "Expense not found.";
+                TempData["ErrorMessage"] = "Expense not found or access denied.";
                 return RedirectToAction(nameof(ExpenseTable));
             }
             return View(expense);
+        }
+
+     
+        private bool HasAccessToExpense(Expense expense)
+        {
+            return expense != null && expense.UserName == GetLoggedInUserId();
         }
     }
 }

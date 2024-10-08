@@ -1,17 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 using ASI.Basecode.Data.Models;
 
 namespace ASI.Basecode.Data
 {
     public partial class AsiBasecodeDBContext : DbContext
     {
-        public AsiBasecodeDBContext()
-        {
-        }
-
         public AsiBasecodeDBContext(DbContextOptions<AsiBasecodeDBContext> options)
             : base(options)
         {
@@ -22,68 +16,89 @@ namespace ASI.Basecode.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // User Entity Configuration
+          
             modelBuilder.Entity<User>(entity =>
             {
-                entity.HasIndex(e => e.UserId, "UQ__Users__1788CC4D5F4A160F")
-                    .IsUnique();
+              
+                entity.HasKey(e => e.Id);
 
-                entity.Property(e => e.CreatedBy)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+                entity.HasIndex(e => e.UserName, "UQ__Users__UserName")
+                      .IsUnique(); 
 
-                entity.Property(e => e.CreatedTime).HasColumnType("datetime");
+                entity.Property(e => e.UserName)
+                      .IsRequired()
+                      .HasMaxLength(50)
+                      .IsUnicode(false);
 
                 entity.Property(e => e.Name)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+                      .IsRequired()
+                      .HasMaxLength(50)
+                      .IsUnicode(false);
 
                 entity.Property(e => e.Password)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+                      .IsRequired()
+                      .HasMaxLength(50)
+                      .IsUnicode(false);
+
+                entity.Property(e => e.CreatedBy)
+                      .HasMaxLength(50)
+                      .IsUnicode(false);
+
+                entity.Property(e => e.CreatedTime)
+                      .HasColumnType("datetime");
 
                 entity.Property(e => e.UpdatedBy)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+                      .HasMaxLength(50)
+                      .IsUnicode(false);
 
-                entity.Property(e => e.UpdatedTime).HasColumnType("datetime");
+                entity.Property(e => e.UpdatedTime)
+                      .HasColumnType("datetime");
 
-                entity.Property(e => e.UserId)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+               
+                entity.HasMany(u => u.Expenses)
+                      .WithOne(e => e.User)
+                      .HasForeignKey(e => e.UserName) 
+                      .HasPrincipalKey(u => u.UserName) 
+                      .OnDelete(DeleteBehavior.Cascade); 
             });
 
-            // Expense Entity Configuration
+
             modelBuilder.Entity<Expense>(entity =>
             {
                 entity.HasKey(e => e.ExpenseId);
 
                 entity.Property(e => e.ExpenseId)
-                    .HasColumnName("ExpenseId")
-                    .ValueGeneratedOnAdd();
+                      .ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Title)
-                    .IsRequired()
-                    .HasMaxLength(100)
-                    .IsUnicode(false);
+                      .IsRequired()
+                      .HasMaxLength(100)
+                      .IsUnicode(false);
 
                 entity.Property(e => e.Category)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+                      .IsRequired()
+                      .HasMaxLength(50)
+                      .IsUnicode(false);
 
                 entity.Property(e => e.Amount)
-                    .HasColumnType("decimal(18,2)")
-                    .IsRequired();
+                      .HasColumnType("decimal(18,2)")
+                      .IsRequired();
 
                 entity.Property(e => e.Date)
-                    .HasColumnType("datetime")
-                    .IsRequired();
+                      .HasColumnType("datetime")
+                      .IsRequired();
+
+                entity.Property(e => e.UserName)
+                      .IsRequired()
+                      .HasMaxLength(50)
+                      .IsUnicode(false);
+
+               
+                entity.HasOne(e => e.User)
+                      .WithMany(u => u.Expenses)
+                      .HasForeignKey(e => e.UserName) 
+                      .HasPrincipalKey(u => u.UserName) 
+                      .OnDelete(DeleteBehavior.Cascade); 
             });
 
             OnModelCreatingPartial(modelBuilder);
