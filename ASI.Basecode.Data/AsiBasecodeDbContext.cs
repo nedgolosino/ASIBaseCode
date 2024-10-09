@@ -16,19 +16,21 @@ namespace ASI.Basecode.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-          
+            // User Entity Configuration
             modelBuilder.Entity<User>(entity =>
             {
-              
+                // Configure primary key
                 entity.HasKey(e => e.Id);
 
+                // Ensure UserName is unique
                 entity.HasIndex(e => e.UserName, "UQ__Users__UserName")
-                      .IsUnique(); 
+                      .IsUnique();
 
+                // Configure fields
                 entity.Property(e => e.UserName)
                       .IsRequired()
                       .HasMaxLength(50)
-                      .IsUnicode(false);
+                      .IsUnicode(false); // Ensure this property is the same type as in Expense
 
                 entity.Property(e => e.Name)
                       .IsRequired()
@@ -54,19 +56,21 @@ namespace ASI.Basecode.Data
                 entity.Property(e => e.UpdatedTime)
                       .HasColumnType("datetime");
 
-               
+                // Configure relationship between User and Expenses
                 entity.HasMany(u => u.Expenses)
                       .WithOne(e => e.User)
-                      .HasForeignKey(e => e.UserName) 
-                      .HasPrincipalKey(u => u.UserName) 
-                      .OnDelete(DeleteBehavior.Cascade); 
+                      .HasForeignKey(e => e.UserName) // Foreign key in Expense referencing UserName in User
+                      .HasPrincipalKey(u => u.UserName) // Principal key in User entity
+                      .OnDelete(DeleteBehavior.Cascade); // Optional: Cascade delete
             });
 
-
+            // Expense Entity Configuration
             modelBuilder.Entity<Expense>(entity =>
             {
+                // Configure primary key
                 entity.HasKey(e => e.ExpenseId);
 
+                // Configure fields
                 entity.Property(e => e.ExpenseId)
                       .ValueGeneratedOnAdd();
 
@@ -88,19 +92,20 @@ namespace ASI.Basecode.Data
                       .HasColumnType("datetime")
                       .IsRequired();
 
-                entity.Property(e => e.UserName)
+                entity.Property(e => e.UserName) // Ensure this is properly configured as a string
                       .IsRequired()
                       .HasMaxLength(50)
                       .IsUnicode(false);
 
-               
-                entity.HasOne(e => e.User)
-                      .WithMany(u => u.Expenses)
-                      .HasForeignKey(e => e.UserName) 
-                      .HasPrincipalKey(u => u.UserName) 
-                      .OnDelete(DeleteBehavior.Cascade); 
+                // Configure relationship between Expense and User
+                entity.HasOne(e => e.User) // Each Expense references a single User
+                      .WithMany(u => u.Expenses) // A User can have many Expenses
+                      .HasForeignKey(e => e.UserName) // Foreign key in Expense referencing UserName in User
+                      .HasPrincipalKey(u => u.UserName) // Principal key in User
+                      .OnDelete(DeleteBehavior.Cascade); // Optional: Cascade delete
             });
 
+            // Call any additional configurations
             OnModelCreatingPartial(modelBuilder);
         }
 

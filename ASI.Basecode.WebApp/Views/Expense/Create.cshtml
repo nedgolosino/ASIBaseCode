@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
     <style>
         body {
             background-color: #f8f9fa;
@@ -40,11 +41,47 @@
                 background-color: #3b3d42;
                 border-color: #b9c2cf;
             }
+
+        .alert-message {
+            display: none;
+            margin-bottom: 10px;
+        }
+
+        .alert-success {
+            color: #23ca1d;
+            background-color: #353736;
+            border-color: #cfaa26;
+        }
+
+        .alert-danger {
+            color: #fd4141;
+            background-color: #202225;
+            border-color: #fd4141;
+        }
     </style>
 </head>
 <body>
     <div class="form-container">
         <h2 class="text-center">Add New Expense</h2>
+
+        <!-- Display Success and Error Messages -->
+        <div class="message-container">
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success alert-message">
+                    @TempData["SuccessMessage"]
+                </div>
+            }
+
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger alert-message">
+                    @TempData["ErrorMessage"]
+                </div>
+            }
+        </div>
+
+        <!-- Add Expense Form -->
         <form method="post" asp-action="Create">
             <div class="mb-3">
                 <label asp-for="Title" class="form-label">Title</label>
@@ -73,10 +110,29 @@
                 <input asp-for="Date" class="form-control" type="date" />
                 <span asp-validation-for="Date" class="text-danger"></span>
             </div>
-           
 
             <button type="submit" class="btn btn-primary">Add Expense</button>
         </form>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+      
+        $(document).ready(function () {
+            var successMessage = '@TempData["SuccessMessage"]';
+            var errorMessage = '@TempData["ErrorMessage"]';
+
+            if (successMessage) {
+                toastr.success(successMessage);
+            }
+
+            if (errorMessage) {
+                toastr.error(errorMessage);
+            }
+        });
+    </script>
 </body>
 </html>
