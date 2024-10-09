@@ -19,21 +19,21 @@ namespace ASI.Basecode.WebApp.Controllers
             _logger = logger;
         }
 
+        
         private string GetLoggedInUserId()
         {
             return HttpContext.User.Identity.Name;
         }
 
-
+        
         public IActionResult Index()
         {
             try
             {
                 string userId = GetLoggedInUserId();
-
                 var expenses = _expenseService.GetAllExpenses()
-                                    .Where(e => e.UserName == userId) 
-                                    .ToList();
+                                              .Where(e => e.UserName == userId) 
+                                              .ToList();
 
                 return View(expenses);
             }
@@ -44,16 +44,21 @@ namespace ASI.Basecode.WebApp.Controllers
             }
         }
 
-        public IActionResult ExpenseTable()
+     
+        public IActionResult ExpenseTable(string searchExpenseId = "")
         {
             try
             {
                 string userId = GetLoggedInUserId();
-
-      
                 var expenses = _expenseService.GetAllExpenses()
-                                    .Where(e => e.UserName == userId) // Filter by the current user's ID
-                                    .ToList();
+                                              .Where(e => e.UserName == userId)
+                                              .ToList();
+
+            
+                if (!string.IsNullOrEmpty(searchExpenseId) && int.TryParse(searchExpenseId, out int expenseId))
+                {
+                    expenses = expenses.Where(e => e.ExpenseId == expenseId).ToList();
+                }
 
                 return View(expenses);
             }
@@ -64,7 +69,7 @@ namespace ASI.Basecode.WebApp.Controllers
             }
         }
 
-  
+       
         public IActionResult Create()
         {
             return View();
@@ -79,12 +84,11 @@ namespace ASI.Basecode.WebApp.Controllers
             {
                 try
                 {
-              
+                  
                     model.UserName = GetLoggedInUserId();
-
                     _expenseService.AddExpense(model);
                     TempData["SuccessMessage"] = "Expense added successfully!";
-                    return RedirectToAction(nameof(ExpenseTable)); 
+                    return RedirectToAction(nameof(ExpenseTable));
                 }
                 catch (Exception ex)
                 {
@@ -107,7 +111,7 @@ namespace ASI.Basecode.WebApp.Controllers
             return View(expense);
         }
 
-  
+     
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(Expense model)
@@ -161,7 +165,7 @@ namespace ASI.Basecode.WebApp.Controllers
             }
         }
 
-
+     
         public IActionResult Details(int id)
         {
             var expense = _expenseService.GetExpenseById(id);
@@ -173,7 +177,6 @@ namespace ASI.Basecode.WebApp.Controllers
             return View(expense);
         }
 
-     
         private bool HasAccessToExpense(Expense expense)
         {
             return expense != null && expense.UserName == GetLoggedInUserId();
