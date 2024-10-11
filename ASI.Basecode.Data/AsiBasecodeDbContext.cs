@@ -10,9 +10,10 @@ namespace ASI.Basecode.Data
             : base(options)
         {
         }
-
+            
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Expense> Expenses { get; set; }
+        public virtual DbSet<Product> Products { get; set; }   
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
