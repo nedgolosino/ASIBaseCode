@@ -14,6 +14,8 @@ namespace ASI.Basecode.Data
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Expense> Expenses { get; set; }
 
+        public virtual DbSet<Category> Categories { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // User Entity Configuration
@@ -105,6 +107,21 @@ namespace ASI.Basecode.Data
                       .OnDelete(DeleteBehavior.Cascade); // Optional: Cascade delete
             });
 
+            modelBuilder.Entity<Category>(entity =>
+            {
+                entity.ToTable("Category");
+
+                entity.HasKey(e => e.CategoryId);
+
+                entity.Property(e => e.CategoryName)
+                      .IsRequired()
+                      .HasMaxLength(100)
+                      .IsUnicode(false);
+
+                entity.Property(e => e.DateCreated)
+                      .HasColumnType("datetime")
+                      .IsRequired();
+            });
             // Call any additional configurations
             OnModelCreatingPartial(modelBuilder);
         }
