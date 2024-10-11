@@ -14,6 +14,10 @@
             Expenses
         </a>
         
+        <a href="@Url.Action("ProductTable", "Product")" class="btn btn-primary ml-3"> 
+            Products
+        </a>
+
     </div>
     <div class="logosec">
         @HttpContextAccessor.HttpContext.Session.GetString("UserName")
