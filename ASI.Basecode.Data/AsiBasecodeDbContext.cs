@@ -16,6 +16,7 @@ namespace ASI.Basecode.Data
         public virtual DbSet<Product> Products { get; set; }   
 
         public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<Announcement> Announcements{ get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

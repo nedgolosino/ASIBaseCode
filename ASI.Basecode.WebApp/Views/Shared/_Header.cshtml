@@ -22,6 +22,10 @@
             Products
         </a>
 
+        <a href="@Url.Action("Index", "Announcement")" class="btn btn-primary ml-3">
+            Announcements
+        </a>
+
     </div>
     <div class="logosec">
         @HttpContextAccessor.HttpContext.Session.GetString("UserName")
