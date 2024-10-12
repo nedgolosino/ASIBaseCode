@@ -32,6 +32,7 @@ namespace ASI.Basecode.WebApp
 
             // Services
             this._services.AddScoped<IUserService, UserService>();
+            this._services.AddScoped<IAnnouncementService, AnnouncementService>();
 
             // Register ExpenseService and ExpenseRepository
             this._services.AddScoped<IExpenseService, ExpenseService>();
@@ -42,6 +43,7 @@ namespace ASI.Basecode.WebApp
 
             // Repositories
             this._services.AddScoped<IUserRepository, UserRepository>();
+            this._services.AddScoped<IAnnouncementRepository, AnnouncementRepository>();
 
             // Manager Class
             this._services.AddScoped<SignInManager>();

@@ -1,0 +1,35 @@
+﻿@model IEnumerable<ASI.Basecode.Data.Models.Announcement>
+
+<div class="container pt-5">
+    <a asp-controller="Announcement" asp-action="Create" class="btn btn-outline-primary mb-3">Create Announcement</a>
+    <div class="row">
+        @if (Model == null || !Model.Any())
+        {
+            <h4 class="card-text font-weight-bold">no books to display</h4>
+        }
+        else
+        {
+            @foreach (var announcement in Model)
+            {
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-text font-weight-bold">@announcement.Title</h4>
+                            <p class="card-text"><b>@announcement.Description</b></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">@announcement.Date.ToString("dd/MM/yyyy")</small>
+                            </div>
+                            <form method="post" asp-action="Delete" class="d-flex p-2">
+                                <input value="@announcement.announcementId" name="id" class="d-none" />
+                                <button type="submit" asp-action="Delete" asp class="btn btn-danger mr-2">Delete</button>
+                                <a asp-action="Edit" asp-route-id="@announcement.announcementId" class="btn btn-info">Edit</a>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+
+    </div>
+</div>
