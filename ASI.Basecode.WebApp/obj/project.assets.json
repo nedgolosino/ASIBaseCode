@@ -12673,11 +12673,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Liezel\\Downloads\\ASIBasecode\\ASIBasecode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
+      "projectUniqueName": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
       "projectName": "ASI.Basecode.WebApp",
-      "projectPath": "C:\\Users\\Liezel\\Downloads\\ASIBasecode\\ASIBasecode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
+      "projectPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
       "packagesPath": "C:\\Users\\Liezel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Liezel\\Downloads\\ASIBasecode\\ASIBasecode\\ASI.Basecode.WebApp\\obj\\",
+      "outputPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Liezel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -12695,14 +12695,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Liezel\\Downloads\\ASIBasecode\\ASIBasecode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
-              "projectPath": "C:\\Users\\Liezel\\Downloads\\ASIBasecode\\ASIBasecode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj"
+            "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
+              "projectPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj"
             },
-            "C:\\Users\\Liezel\\Downloads\\ASIBasecode\\ASIBasecode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
-              "projectPath": "C:\\Users\\Liezel\\Downloads\\ASIBasecode\\ASIBasecode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj"
+            "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
+              "projectPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj"
             },
-            "C:\\Users\\Liezel\\Downloads\\ASIBasecode\\ASIBasecode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj": {
-              "projectPath": "C:\\Users\\Liezel\\Downloads\\ASIBasecode\\ASIBasecode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj"
+            "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj": {
+              "projectPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj"
             }
           }
         }

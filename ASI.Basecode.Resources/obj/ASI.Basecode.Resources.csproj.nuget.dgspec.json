@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Liezel\\Downloads\\ASIBasecode\\ASIBasecode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {}
+    "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Liezel\\Downloads\\ASIBasecode\\ASIBasecode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
+    "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Liezel\\Downloads\\ASIBasecode\\ASIBasecode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
+        "projectUniqueName": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
         "projectName": "ASI.Basecode.Resources",
-        "projectPath": "C:\\Users\\Liezel\\Downloads\\ASIBasecode\\ASIBasecode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
+        "projectPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
         "packagesPath": "C:\\Users\\Liezel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Liezel\\Downloads\\ASIBasecode\\ASIBasecode\\ASI.Basecode.Resources\\obj\\",
+        "outputPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Resources\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Liezel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -56,20 +56,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
