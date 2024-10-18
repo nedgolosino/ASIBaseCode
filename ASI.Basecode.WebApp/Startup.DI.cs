@@ -2,11 +2,13 @@
 using ASI.Basecode.Data.Interfaces;
 using ASI.Basecode.Data.Repositories;
 using ASI.Basecode.Services.Interfaces;
+using ASI.Basecode.Services.ServiceModels;
 using ASI.Basecode.Services.Services;
 using ASI.Basecode.WebApp.Authentication;
 using ASI.Basecode.WebApp.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
@@ -31,6 +33,13 @@ namespace ASI.Basecode.WebApp
             this._services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             // Services
+            this._services.TryAddSingleton<TokenValidationParametersFactory>();
+            this._services.AddScoped<IAssignmentService, AssignmentService>();
+
+
+            // Repositories
+            this._services.AddScoped<IAssignmentRepository, AssignmentRepository>();
+
             this._services.AddScoped<IUserService, UserService>();
             this._services.AddScoped<IAnnouncementService, AnnouncementService>();
 

@@ -1,0 +1,550 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.data\\migrations\\20241016091159_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|solutionrelative:asi.basecode.data\\migrations\\20241016091159_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.data\\repositories\\assignmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|solutionrelative:asi.basecode.data\\repositories\\assignmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.webapp\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|solutionrelative:asi.basecode.webapp\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.webapp\\controllers\\assignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|solutionrelative:asi.basecode.webapp\\controllers\\assignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.webapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|solutionrelative:asi.basecode.webapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.webapp\\views\\assignment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|solutionrelative:asi.basecode.webapp\\views\\assignment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|solutionrelative:asi.basecode.webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.webapp\\views\\assignment\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|solutionrelative:asi.basecode.webapp\\views\\assignment\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.webapp\\views\\assignment\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|solutionrelative:asi.basecode.webapp\\views\\assignment\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.webapp\\startup.di.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|solutionrelative:asi.basecode.webapp\\startup.di.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.webapp\\models\\loginuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|solutionrelative:asi.basecode.webapp\\models\\loginuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{141FD3B6-645F-4E17-B3DA-055A39639513}|ASI.Basecode.Services\\ASI.Basecode.Services.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.services\\services\\assignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{141FD3B6-645F-4E17-B3DA-055A39639513}|ASI.Basecode.Services\\ASI.Basecode.Services.csproj|solutionrelative:asi.basecode.services\\services\\assignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{141FD3B6-645F-4E17-B3DA-055A39639513}|ASI.Basecode.Services\\ASI.Basecode.Services.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.services\\interfaces\\iassignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{141FD3B6-645F-4E17-B3DA-055A39639513}|ASI.Basecode.Services\\ASI.Basecode.Services.csproj|solutionrelative:asi.basecode.services\\interfaces\\iassignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.data\\interfaces\\iassignmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|solutionrelative:asi.basecode.data\\interfaces\\iassignmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.data\\models\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|solutionrelative:asi.basecode.data\\models\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.data\\asibasecodedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|solutionrelative:asi.basecode.data\\asibasecodedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.data\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|solutionrelative:asi.basecode.data\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.webapp\\authentication\\tokenprovidermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|solutionrelative:asi.basecode.webapp\\authentication\\tokenprovidermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.data\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|solutionrelative:asi.basecode.data\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.data\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|solutionrelative:asi.basecode.data\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0C96A6-749E-413B-BF4D-8E405BEB172E}|ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.resources\\asi.basecode.resources.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ED0C96A6-749E-413B-BF4D-8E405BEB172E}|ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj|solutionrelative:asi.basecode.resources\\asi.basecode.resources.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.webapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|solutionrelative:asi.basecode.webapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.data\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|solutionrelative:asi.basecode.data\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.webapp\\authentication\\customjwtdataformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|solutionrelative:asi.basecode.webapp\\authentication\\customjwtdataformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.webapp\\configuration\\configurationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|solutionrelative:asi.basecode.webapp\\configuration\\configurationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.data\\asi.basecode.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|solutionrelative:asi.basecode.data\\asi.basecode.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.webapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|solutionrelative:asi.basecode.webapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A1CD85-842A-4C7C-B29A-5928626D75A7}|ASI.Basecode.Data\\ASI.Basecode.Data.csproj|solutionrelative:asi.basecode.data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.webapp\\asi.basecode.webapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|solutionrelative:asi.basecode.webapp\\asi.basecode.webapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{141FD3B6-645F-4E17-B3DA-055A39639513}|ASI.Basecode.Services\\ASI.Basecode.Services.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.services\\servicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{141FD3B6-645F-4E17-B3DA-055A39639513}|ASI.Basecode.Services\\ASI.Basecode.Services.csproj|solutionrelative:asi.basecode.services\\servicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.webapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|solutionrelative:asi.basecode.webapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.webapp\\asi.basecode.webapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{B0C34CEC-4ED8-4956-B3C8-CA543F829D7B}|ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj|solutionrelative:asi.basecode.webapp\\asi.basecode.webapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{141FD3B6-645F-4E17-B3DA-055A39639513}|ASI.Basecode.Services\\ASI.Basecode.Services.csproj|c:\\users\\liezel\\downloads\\test\\asibasecode\\asi.basecode.services\\asi.basecode.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{141FD3B6-645F-4E17-B3DA-055A39639513}|ASI.Basecode.Services\\ASI.Basecode.Services.csproj|solutionrelative:asi.basecode.services\\asi.basecode.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20241016091159_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\Migrations\\20241016091159_Initial.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.Data\\Migrations\\20241016091159_Initial.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\Migrations\\20241016091159_Initial.cs",
+              "RelativeToolTip": "ASI.Basecode.Data\\Migrations\\20241016091159_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T09:12:00.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AssignmentService.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Services\\Services\\AssignmentService.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.Services\\Services\\AssignmentService.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Services\\Services\\AssignmentService.cs",
+              "RelativeToolTip": "ASI.Basecode.Services\\Services\\AssignmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T05:55:47.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IAssignmentService.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Services\\Interfaces\\IAssignmentService.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.Services\\Interfaces\\IAssignmentService.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Services\\Interfaces\\IAssignmentService.cs",
+              "RelativeToolTip": "ASI.Basecode.Services\\Interfaces\\IAssignmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T05:55:05.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IAssignmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\Interfaces\\IAssignmentRepository.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.Data\\Interfaces\\IAssignmentRepository.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\Interfaces\\IAssignmentRepository.cs",
+              "RelativeToolTip": "ASI.Basecode.Data\\Interfaces\\IAssignmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T05:54:10.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Assignment.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\Models\\Assignment.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.Data\\Models\\Assignment.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\Models\\Assignment.cs",
+              "RelativeToolTip": "ASI.Basecode.Data\\Models\\Assignment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T05:53:27.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AssignmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\Repositories\\AssignmentRepository.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.Data\\Repositories\\AssignmentRepository.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\Repositories\\AssignmentRepository.cs",
+              "RelativeToolTip": "ASI.Basecode.Data\\Repositories\\AssignmentRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADgvwUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T05:53:01.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ASI.Basecode.WebApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ASI.Basecode.WebApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-15T07:46:35.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASI.Basecode.WebApp\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ASI.Basecode.WebApp\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T18:33:36.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.Data\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "ASI.Basecode.Data\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T18:22:14.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.Data\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "ASI.Basecode.Data\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T18:22:13.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TokenProviderMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Authentication\\TokenProviderMiddleware.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.WebApp\\Authentication\\TokenProviderMiddleware.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Authentication\\TokenProviderMiddleware.cs",
+              "RelativeToolTip": "ASI.Basecode.WebApp\\Authentication\\TokenProviderMiddleware.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwDAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T04:12:59.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CustomJwtDataFormat.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Authentication\\CustomJwtDataFormat.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.WebApp\\Authentication\\CustomJwtDataFormat.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Authentication\\CustomJwtDataFormat.cs",
+              "RelativeToolTip": "ASI.Basecode.WebApp\\Authentication\\CustomJwtDataFormat.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAgwFEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T04:05:43.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginUser.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Models\\LoginUser.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.WebApp\\Models\\LoginUser.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Models\\LoginUser.cs",
+              "RelativeToolTip": "ASI.Basecode.WebApp\\Models\\LoginUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T04:05:30.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ConfigurationExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Configuration\\ConfigurationExtensions.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.WebApp\\Configuration\\ConfigurationExtensions.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Configuration\\ConfigurationExtensions.cs",
+              "RelativeToolTip": "ASI.Basecode.WebApp\\Configuration\\ConfigurationExtensions.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T04:05:12.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.Data\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\UnitOfWork.cs",
+              "RelativeToolTip": "ASI.Basecode.Data\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T14:35:07.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Startup.DI.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Startup.DI.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.WebApp\\Startup.DI.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Startup.DI.cs",
+              "RelativeToolTip": "ASI.Basecode.WebApp\\Startup.DI.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T21:43:38.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.WebApp\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "ASI.Basecode.WebApp\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAADgv0YAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T22:56:04.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.Data\\Repositories\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "ASI.Basecode.Data\\Repositories\\BaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T04:18:37.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Views\\Assignment\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASI.Basecode.WebApp\\Views\\Assignment\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Views\\Assignment\\Index.cshtml",
+              "RelativeToolTip": "ASI.Basecode.WebApp\\Views\\Assignment\\Index.cshtml",
+              "ViewState": "AgIAAFAAAAAAAAAAAADwv2EAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-21T21:39:10.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AsiBasecodeDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\AsiBasecodeDbContext.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.Data\\AsiBasecodeDbContext.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\AsiBasecodeDbContext.cs",
+              "RelativeToolTip": "ASI.Basecode.Data\\AsiBasecodeDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T04:03:51.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Views\\Assignment\\Create.cshtml",
+              "RelativeDocumentMoniker": "ASI.Basecode.WebApp\\Views\\Assignment\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Views\\Assignment\\Create.cshtml",
+              "RelativeToolTip": "ASI.Basecode.WebApp\\Views\\Assignment\\Create.cshtml",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAYwHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-21T22:21:09.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AssignmentController.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Controllers\\AssignmentController.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.WebApp\\Controllers\\AssignmentController.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Controllers\\AssignmentController.cs",
+              "RelativeToolTip": "ASI.Basecode.WebApp\\Controllers\\AssignmentController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T21:19:41.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Views\\Assignment\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ASI.Basecode.WebApp\\Views\\Assignment\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Views\\Assignment\\Edit.cshtml",
+              "RelativeToolTip": "ASI.Basecode.WebApp\\Views\\Assignment\\Edit.cshtml",
+              "ViewState": "AgIAADgAAAAAAAAAAAAYwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-21T23:16:56.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.WebApp\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ASI.Basecode.WebApp\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAuwBwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T20:49:34.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Header.cshtml",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Views\\Shared\\_Header.cshtml",
+              "RelativeDocumentMoniker": "ASI.Basecode.WebApp\\Views\\Shared\\_Header.cshtml",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Views\\Shared\\_Header.cshtml",
+              "RelativeToolTip": "ASI.Basecode.WebApp\\Views\\Shared\\_Header.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-21T21:57:57.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.Data\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\Models\\User.cs",
+              "RelativeToolTip": "ASI.Basecode.Data\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T22:53:54.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ASI.Basecode.Data.csproj",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
+              "RelativeDocumentMoniker": "ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
+              "RelativeToolTip": "ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-21T20:52:08.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ASI.Basecode.Resources.csproj",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
+              "RelativeDocumentMoniker": "ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
+              "RelativeToolTip": "ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-21T20:52:06.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ASI.Basecode.WebApp.csproj",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
+              "RelativeDocumentMoniker": "ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
+              "RelativeToolTip": "ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-21T20:46:26.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ServiceBase.cs",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Services\\ServiceBase.cs",
+              "RelativeDocumentMoniker": "ASI.Basecode.Services\\ServiceBase.cs",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Services\\ServiceBase.cs",
+              "RelativeToolTip": "ASI.Basecode.Services\\ServiceBase.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T20:42:11.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ASI.Basecode.WebApp\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ASI.Basecode.WebApp\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-21T20:44:59.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ASI.Basecode.WebApp",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
+              "RelativeDocumentMoniker": "ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
+              "RelativeToolTip": "ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-21T20:44:41.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ASI.Basecode.Services.csproj",
+              "DocumentMoniker": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj",
+              "RelativeDocumentMoniker": "ASI.Basecode.Services\\ASI.Basecode.Services.csproj",
+              "ToolTip": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj",
+              "RelativeToolTip": "ASI.Basecode.Services\\ASI.Basecode.Services.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-21T20:42:06.622Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

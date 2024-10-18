@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 using ASI.Basecode.Data.Models;
 
 namespace ASI.Basecode.Data
@@ -10,7 +12,7 @@ namespace ASI.Basecode.Data
             : base(options)
         {
         }
-            
+        public virtual DbSet<Assignment> Assignments { get; set; } 
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Expense> Expenses { get; set; }
         public virtual DbSet<Product> Products { get; set; }   
