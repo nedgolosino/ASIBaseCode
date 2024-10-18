@@ -45,6 +45,94 @@ namespace ASI.Basecode.Data.Migrations
 
                     b.ToTable("Assignments");
                 });
+            modelBuilder.Entity("ASI.Basecode.Data.Models.Category", b =>
+                {
+                    b.Property<int>("CategoryId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryId"), 1L, 1);
+
+                    b.Property<string>("CategoryName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("datetime");
+
+                    b.HasKey("CategoryId");
+
+                    b.ToTable("Category", (string)null);
+                });
+
+            modelBuilder.Entity("ASI.Basecode.Data.Models.Expense", b =>
+                {
+                    b.Property<int>("ExpenseId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ExpenseId"), 1L, 1);
+
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(50)");
+
+                    b.HasKey("ExpenseId");
+
+                    b.HasIndex("UserName");
+
+                    b.ToTable("Expenses");
+                });
+
+            modelBuilder.Entity("ASI.Basecode.Data.Models.Product", b =>
+                {
+                    b.Property<int>("ProductId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductId"), 1L, 1);
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("PriceTotal")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ProductId");
+
+                    b.ToTable("Products");
+                });
 
             modelBuilder.Entity("ASI.Basecode.Data.Models.User", b =>
                 {
@@ -55,7 +143,6 @@ namespace ASI.Basecode.Data.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("CreatedBy")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .IsUnicode(false)
                         .HasColumnType("varchar(50)");
@@ -76,7 +163,6 @@ namespace ASI.Basecode.Data.Migrations
                         .HasColumnType("varchar(50)");
 
                     b.Property<string>("UpdatedBy")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .IsUnicode(false)
                         .HasColumnType("varchar(50)");
@@ -84,7 +170,7 @@ namespace ASI.Basecode.Data.Migrations
                     b.Property<DateTime>("UpdatedTime")
                         .HasColumnType("datetime");
 
-                    b.Property<string>("UserId")
+                    b.Property<string>("UserName")
                         .IsRequired()
                         .HasMaxLength(50)
                         .IsUnicode(false)
@@ -92,10 +178,27 @@ namespace ASI.Basecode.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex(new[] { "UserId" }, "UQ__Users__1788CC4D5F4A160F")
+                    b.HasIndex(new[] { "UserName" }, "UQ__Users__UserName")
                         .IsUnique();
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("ASI.Basecode.Data.Models.Expense", b =>
+                {
+                    b.HasOne("ASI.Basecode.Data.Models.User", "User")
+                        .WithMany("Expenses")
+                        .HasForeignKey("UserName")
+                        .HasPrincipalKey("UserName")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ASI.Basecode.Data.Models.User", b =>
+                {
+                    b.Navigation("Expenses");
                 });
 #pragma warning restore 612, 618
         }

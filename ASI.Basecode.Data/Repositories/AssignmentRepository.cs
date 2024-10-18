@@ -25,19 +25,19 @@ namespace ASI.Basecode.Data.Repositories
         public void AddAssignment(Assignment assignment)
         {
             this.GetDbSet<Assignment>().Add(assignment);
-            UnitOfWork.SaveChanges();
+            UnitOfWork.SaveChanges2();
         }
 
         public void EditAssignment(Assignment assignment)
         {
             this.GetDbSet<Assignment>().Update(assignment);
-            UnitOfWork.SaveChanges();
+            UnitOfWork.SaveChanges2();
         }
 
         public void DeleteAssignment(Assignment assignment)
         {
             _dbContext.Assignments.Remove(assignment);
-            UnitOfWork.SaveChanges();
+            UnitOfWork.SaveChanges2();
         }
     }
 }

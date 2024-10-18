@@ -22,11 +22,11 @@ namespace ASI.Basecode.WebApp
         /// </summary>
         private void ConfigureOtherServices()
         {
-            // Framework
+            // Framework services
             this._services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             this._services.TryAddSingleton<IActionContextAccessor, ActionContextAccessor>();
 
-            // Common
+            // Common services
             this._services.AddScoped<TokenProvider>();
             this._services.TryAddSingleton<TokenProviderOptionsFactory>();
             this._services.TryAddSingleton<TokenValidationParametersFactory>();
@@ -34,18 +34,30 @@ namespace ASI.Basecode.WebApp
 
             // Services
             this._services.TryAddSingleton<TokenValidationParametersFactory>();
-            this._services.AddScoped<IUserService, UserService>();
             this._services.AddScoped<IAssignmentService, AssignmentService>();
 
 
             // Repositories
-            this._services.AddScoped<IUserRepository, UserRepository>();
             this._services.AddScoped<IAssignmentRepository, AssignmentRepository>();
 
+            this._services.AddScoped<IUserService, UserService>();
+            this._services.AddScoped<IAnnouncementService, AnnouncementService>();
+
+            // Register ExpenseService and ExpenseRepository
+            this._services.AddScoped<IExpenseService, ExpenseService>();
+            this._services.AddScoped<IExpenseRepository, ExpenseRepository>();
+
+            this._services.AddScoped<ICategoryService, CategoryService>();
+            this._services.AddScoped<ICategoryRespository, CategoryRepository>();
+
+            // Repositories
+            this._services.AddScoped<IUserRepository, UserRepository>();
+            this._services.AddScoped<IAnnouncementRepository, AnnouncementRepository>();
 
             // Manager Class
             this._services.AddScoped<SignInManager>();
 
+            // Register HTTP client
             this._services.AddHttpClient();
         }
     }

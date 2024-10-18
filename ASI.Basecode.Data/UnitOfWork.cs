@@ -13,6 +13,7 @@ namespace ASI.Basecode.Data
     {
         /// <summary>
         /// Gets the database context
+   
         /// </summary>
         public DbContext Database { get; private set; }
 
@@ -20,6 +21,9 @@ namespace ASI.Basecode.Data
         /// Initializes a new instance of the UnitOfWork class.
         /// </summary>
         /// <param name="serviceContext">The service context.</param>
+   
+     
+     
         public UnitOfWork(AsiBasecodeDBContext serviceContext)
         {
             Database = serviceContext;
@@ -28,7 +32,7 @@ namespace ASI.Basecode.Data
         /// <summary>
         /// Saves the changes to database
         /// </summary>
-        public int SaveChanges()
+        public int SaveChanges2()
         {
             return Database.SaveChanges();
         }
@@ -43,6 +47,15 @@ namespace ASI.Basecode.Data
 
         /// <summary>
         /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+   
+        /// </summary>
+        public void SaveChanges()
+        {
+            Database.SaveChanges();
+        }
+
+        /// <summary>
+   
         /// </summary>
         public void Dispose()
         {

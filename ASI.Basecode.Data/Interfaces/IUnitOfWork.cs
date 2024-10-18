@@ -17,6 +17,7 @@ namespace ASI.Basecode.Data.Interfaces
         /// <summary>
         /// Saves the changes to database
         /// </summary>
-        int SaveChanges();
+        int SaveChanges2();
+        void SaveChanges();
     }
 }
