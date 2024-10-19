@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using ASI.Basecode.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,11 +12,15 @@ namespace ASI.Basecode.Data
     public class UnitOfWork : IUnitOfWork, IDisposable
     {
         /// <summary>
+        /// Gets the database context
    
         /// </summary>
         public DbContext Database { get; private set; }
 
         /// <summary>
+        /// Initializes a new instance of the UnitOfWork class.
+        /// </summary>
+        /// <param name="serviceContext">The service context.</param>
    
      
      
@@ -25,6 +30,23 @@ namespace ASI.Basecode.Data
         }
 
         /// <summary>
+        /// Saves the changes to database
+        /// </summary>
+        public int SaveChanges2()
+        {
+            return Database.SaveChanges();
+        }
+
+        /// <summary>
+        /// Asynchronously saves the changes to the database
+        /// </summary>
+        public async Task<int> SaveChangesAsync()
+        {
+            return await Database.SaveChangesAsync();
+        }
+
+        /// <summary>
+        /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
    
         /// </summary>
         public void SaveChanges()
