@@ -42,7 +42,9 @@
           "LinqKit": "1.2.2",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.6",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "6.0.6",
+          "Microsoft.EntityFrameworkCore": "6.0.6",
           "Microsoft.EntityFrameworkCore.Design": "6.0.6",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6",
           "Microsoft.Extensions.Configuration.Binder": "7.0.2",
           "Microsoft.TypeScript.MSBuild": "4.7.4",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.17",
@@ -3592,6 +3594,10 @@
         }
       },
       "ASI.Basecode.Resources/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.6",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6"
+        },
         "runtime": {
           "ASI.Basecode.Resources.dll": {
             "assemblyVersion": "1.0.0",
@@ -3612,6 +3618,8 @@
           "Hangfire.Core": "1.7.30",
           "LinqKit": "1.2.2",
           "Microsoft.AspNetCore.Localization": "2.1.1",
+          "Microsoft.EntityFrameworkCore": "6.0.6",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6",
           "Microsoft.Extensions.Configuration.Binder": "7.0.2",
           "Microsoft.Extensions.Http": "6.0.0"
         },

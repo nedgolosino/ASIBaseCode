@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj": {}
+    "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
+    "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
+        "projectUniqueName": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
         "projectName": "ASI.Basecode.Data",
-        "projectPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
-        "packagesPath": "C:\\Users\\Liezel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\obj\\",
+        "projectPath": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
+        "packagesPath": "C:\\Users\\tt129\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Liezel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tt129\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -109,17 +113,21 @@
         }
       }
     },
-    "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
+    "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
+        "projectUniqueName": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
         "projectName": "ASI.Basecode.Resources",
-        "projectPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
-        "packagesPath": "C:\\Users\\Liezel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Resources\\obj\\",
+        "projectPath": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
+        "packagesPath": "C:\\Users\\tt129\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Resources\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Liezel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tt129\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -150,6 +158,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -170,17 +188,21 @@
         }
       }
     },
-    "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj": {
+    "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj",
+        "projectUniqueName": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj",
         "projectName": "ASI.Basecode.Services",
-        "projectPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj",
-        "packagesPath": "C:\\Users\\Liezel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Services\\obj\\",
+        "projectPath": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj",
+        "packagesPath": "C:\\Users\\tt129\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Liezel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tt129\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -195,11 +217,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
-                "projectPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj"
+              "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
+                "projectPath": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj"
               },
-              "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
-                "projectPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj"
+              "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
+                "projectPath": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj"
               }
             }
           }
@@ -243,6 +265,14 @@
               "target": "Package",
               "version": "[2.1.1, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
             "Microsoft.Extensions.Configuration.Binder": {
               "target": "Package",
               "version": "[7.0.2, )"
@@ -272,17 +302,21 @@
         }
       }
     },
-    "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj": {
+    "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
+        "projectUniqueName": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
         "projectName": "ASI.Basecode.WebApp",
-        "projectPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
-        "packagesPath": "C:\\Users\\Liezel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.WebApp\\obj\\",
+        "projectPath": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
+        "packagesPath": "C:\\Users\\tt129\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.WebApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Liezel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tt129\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -297,14 +331,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
-                "projectPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj"
+              "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
+                "projectPath": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj"
               },
-              "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
-                "projectPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj"
+              "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
+                "projectPath": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj"
               },
-              "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj": {
-                "projectPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj"
+              "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj": {
+                "projectPath": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj"
               }
             }
           }
@@ -344,7 +378,15 @@
               "target": "Package",
               "version": "[6.0.6, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.6, )"
             },

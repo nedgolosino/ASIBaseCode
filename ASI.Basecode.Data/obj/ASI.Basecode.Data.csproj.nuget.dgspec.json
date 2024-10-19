@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {}
+    "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
+    "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
+        "projectUniqueName": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
         "projectName": "ASI.Basecode.Data",
-        "projectPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
-        "packagesPath": "C:\\Users\\Liezel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Liezel\\Downloads\\test\\ASIBaseCode\\ASI.Basecode.Data\\obj\\",
+        "projectPath": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
+        "packagesPath": "C:\\Users\\tt129\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tt129\\Desktop\\Base Code\\ASIBaseCode\\ASI.Basecode.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Liezel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tt129\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -16,6 +16,8 @@
           "Hangfire.Core": "1.7.30",
           "LinqKit": "1.2.2",
           "Microsoft.AspNetCore.Localization": "2.1.1",
+          "Microsoft.EntityFrameworkCore": "6.0.6",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6",
           "Microsoft.Extensions.Configuration.Binder": "7.0.2",
           "Microsoft.Extensions.Http": "6.0.0"
         },
@@ -963,6 +965,10 @@
         }
       },
       "ASI.Basecode.Resources/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.6",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6"
+        },
         "runtime": {
           "ASI.Basecode.Resources.dll": {
             "assemblyVersion": "1.0.0",

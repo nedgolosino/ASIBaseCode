@@ -97,3 +97,18 @@ C:\Users\Liezel\Downloads\test\ASIBaseCode\ASI.Basecode.Data\obj\Debug\net6.0\re
 C:\Users\Liezel\Downloads\test\ASIBaseCode\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.pdb
 C:\Users\Liezel\Downloads\test\ASIBaseCode\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.genruntimeconfig.cache
 C:\Users\Liezel\Downloads\test\ASIBaseCode\ASI.Basecode.Data\obj\Debug\net6.0\ref\ASI.Basecode.Data.dll
+C:\Users\tt129\Desktop\Base Code\ASIBaseCode\ASI.Basecode.Data\bin\Debug\net6.0\ASI.Basecode.Data.deps.json
+C:\Users\tt129\Desktop\Base Code\ASIBaseCode\ASI.Basecode.Data\bin\Debug\net6.0\ASI.Basecode.Data.runtimeconfig.json
+C:\Users\tt129\Desktop\Base Code\ASIBaseCode\ASI.Basecode.Data\bin\Debug\net6.0\ASI.Basecode.Data.dll
+C:\Users\tt129\Desktop\Base Code\ASIBaseCode\ASI.Basecode.Data\bin\Debug\net6.0\ASI.Basecode.Data.pdb
+C:\Users\tt129\Desktop\Base Code\ASIBaseCode\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.csproj.AssemblyReference.cache
+C:\Users\tt129\Desktop\Base Code\ASIBaseCode\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tt129\Desktop\Base Code\ASIBaseCode\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.AssemblyInfoInputs.cache
+C:\Users\tt129\Desktop\Base Code\ASIBaseCode\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.AssemblyInfo.cs
+C:\Users\tt129\Desktop\Base Code\ASIBaseCode\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.csproj.CoreCompileInputs.cache
+C:\Users\tt129\Desktop\Base Code\ASIBaseCode\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.sourcelink.json
+C:\Users\tt129\Desktop\Base Code\ASIBaseCode\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.dll
+C:\Users\tt129\Desktop\Base Code\ASIBaseCode\ASI.Basecode.Data\obj\Debug\net6.0\refint\ASI.Basecode.Data.dll
+C:\Users\tt129\Desktop\Base Code\ASIBaseCode\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.pdb
+C:\Users\tt129\Desktop\Base Code\ASIBaseCode\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.genruntimeconfig.cache
+C:\Users\tt129\Desktop\Base Code\ASIBaseCode\ASI.Basecode.Data\obj\Debug\net6.0\ref\ASI.Basecode.Data.dll
