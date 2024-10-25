@@ -12,13 +12,13 @@ namespace ASI.Basecode.Data
             : base(options)
         {
         }
-        public virtual DbSet<Assignment> Assignments { get; set; } 
+
+        public virtual DbSet<Assignment> Assignments { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Expense> Expenses { get; set; }
-        public virtual DbSet<Product> Products { get; set; }   
-
+        public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
-        public virtual DbSet<Announcement> Announcements{ get; set; }
+        public virtual DbSet<Announcement> Announcements { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -35,8 +35,8 @@ namespace ASI.Basecode.Data
                 // Configure fields
                 entity.Property(e => e.UserName)
                       .IsRequired()
-                      .HasMaxLength(50)
-                      .IsUnicode(false); // Ensure this property is the same type as in Expense
+                      .HasMaxLength(50) // Ensure this matches Category.UserName
+                      .IsUnicode(false);
 
                 entity.Property(e => e.Name)
                       .IsRequired()
@@ -65,9 +65,9 @@ namespace ASI.Basecode.Data
                 // Configure relationship between User and Expenses
                 entity.HasMany(u => u.Expenses)
                       .WithOne(e => e.User)
-                      .HasForeignKey(e => e.UserName) // Foreign key in Expense referencing UserName in User
-                      .HasPrincipalKey(u => u.UserName) // Principal key in User entity
-                      .OnDelete(DeleteBehavior.Cascade); // Optional: Cascade delete
+                      .HasForeignKey(e => e.UserName)
+                      .HasPrincipalKey(u => u.UserName)
+                      .OnDelete(DeleteBehavior.Cascade);
             });
 
             // Expense Entity Configuration
@@ -98,22 +98,23 @@ namespace ASI.Basecode.Data
                       .HasColumnType("datetime")
                       .IsRequired();
 
-                entity.Property(e => e.UserName) // Ensure this is properly configured as a string
+                entity.Property(e => e.UserName)
                       .IsRequired()
-                      .HasMaxLength(50)
+                      .HasMaxLength(50) // Ensure this matches User.UserName
                       .IsUnicode(false);
 
                 // Configure relationship between Expense and User
-                entity.HasOne(e => e.User) // Each Expense references a single User
-                      .WithMany(u => u.Expenses) // A User can have many Expenses
-                      .HasForeignKey(e => e.UserName) // Foreign key in Expense referencing UserName in User
-                      .HasPrincipalKey(u => u.UserName) // Principal key in User
-                      .OnDelete(DeleteBehavior.Cascade); // Optional: Cascade delete
+                entity.HasOne(e => e.User)
+                      .WithMany(u => u.Expenses)
+                      .HasForeignKey(e => e.UserName)
+                      .HasPrincipalKey(u => u.UserName)
+                      .OnDelete(DeleteBehavior.Cascade);
             });
 
+            // Category Entity Configuration
             modelBuilder.Entity<Category>(entity =>
             {
-                entity.ToTable("Category");
+                
 
                 entity.HasKey(e => e.CategoryId);
 
@@ -125,7 +126,20 @@ namespace ASI.Basecode.Data
                 entity.Property(e => e.DateCreated)
                       .HasColumnType("datetime")
                       .IsRequired();
+
+                // Configure UserName as a foreign key referencing the User table
+                entity.Property(e => e.UserName)
+                      .IsRequired()
+                      .HasMaxLength(50) // Ensure this matches User.UserName
+                      .IsUnicode(false);
+
+                entity.HasOne(e => e.User)
+                      .WithMany(u => u.Categories)
+                      .HasForeignKey(e => e.UserName)
+                      .HasPrincipalKey(u => u.UserName)
+                      .OnDelete(DeleteBehavior.Cascade);
             });
+
             // Call any additional configurations
             OnModelCreatingPartial(modelBuilder);
         }

@@ -39,5 +39,10 @@ namespace ASI.Basecode.Services.Services
         {
             _categoryRespository.DeleteCategory(Id);
         }
+
+        public IEnumerable<object> GetAllCategories()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

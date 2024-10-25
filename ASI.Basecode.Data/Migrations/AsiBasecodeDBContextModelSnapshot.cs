@@ -85,9 +85,17 @@ namespace ASI.Basecode.Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .HasColumnType("datetime");
 
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(50)");
+
                     b.HasKey("CategoryId");
 
-                    b.ToTable("Category", (string)null);
+                    b.HasIndex("UserName");
+
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("ASI.Basecode.Data.Models.Expense", b =>
@@ -207,6 +215,18 @@ namespace ASI.Basecode.Data.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("ASI.Basecode.Data.Models.Category", b =>
+                {
+                    b.HasOne("ASI.Basecode.Data.Models.User", "User")
+                        .WithMany("Categories")
+                        .HasForeignKey("UserName")
+                        .HasPrincipalKey("UserName")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("ASI.Basecode.Data.Models.Expense", b =>
                 {
                     b.HasOne("ASI.Basecode.Data.Models.User", "User")
@@ -221,6 +241,8 @@ namespace ASI.Basecode.Data.Migrations
 
             modelBuilder.Entity("ASI.Basecode.Data.Models.User", b =>
                 {
+                    b.Navigation("Categories");
+
                     b.Navigation("Expenses");
                 });
 #pragma warning restore 612, 618

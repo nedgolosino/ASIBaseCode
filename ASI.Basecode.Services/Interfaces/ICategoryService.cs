@@ -14,5 +14,6 @@ namespace ASI.Basecode.Services.Interfaces
         void AddCategory(Category category);
         void UpdateCategory(Category category);
         void DeleteCategory(int Id);
+        IEnumerable<object> GetAllCategories();
     }
 }

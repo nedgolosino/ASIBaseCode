@@ -90,14 +90,19 @@
             </div>
             <div class="mb-3">
                 <label asp-for="Category" class="form-label">Category</label>
-                <select asp-for="Category" class="form-control">
+                <select id="categorySelect" asp-for="Category" class="form-control" onchange="toggleNewCategoryInput()">
                     <option value="">Select a category</option>
-                    <option value="Food">Food</option>
-                    <option value="Travel">Travel</option>
-                    <option value="Shopping">Shopping</option>
-                    <option value="Health">Health</option>
-                    <option value="Entertainment">Entertainment</option>
+                    @foreach (var category in ViewBag.Categories)
+                    {
+                        <option value="@category.CategoryName">@category.CategoryName</option>
+                    }
+                    <option value="new">Add new category</option> <!-- New option for adding a category -->
                 </select>
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+            <div class="mb-3" id="newCategoryContainer" style="display:none;">
+                <label for="NewCategory" class="form-label">New Category</label>
+                <input type="text" id="NewCategory" name="NewCategory" class="form-control" placeholder="Enter new category name" />
                 <span asp-validation-for="Category" class="text-danger"></span>
             </div>
             <div class="mb-3">
@@ -120,7 +125,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation/1.19.3/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
     <script>
-      
         $(document).ready(function () {
             var successMessage = '@TempData["SuccessMessage"]';
             var errorMessage = '@TempData["ErrorMessage"]';
@@ -133,6 +137,17 @@
                 toastr.error(errorMessage);
             }
         });
+
+        function toggleNewCategoryInput() {
+            const categorySelect = document.getElementById("categorySelect");
+            const newCategoryContainer = document.getElementById("newCategoryContainer");
+
+            if (categorySelect.value === "new") {
+                newCategoryContainer.style.display = "block"; // Show new category input
+            } else {
+                newCategoryContainer.style.display = "none"; // Hide new category input
+            }
+        }
     </script>
 </body>
 </html>

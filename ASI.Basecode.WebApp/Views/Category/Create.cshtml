@@ -14,7 +14,6 @@
         .form-container {
             max-width: 500px;
             margin: 50px auto;
-            margin-bottom: 6%;
             padding: 20px;
             background-color: #fff;
             border-radius: 8px;
@@ -37,7 +36,6 @@
             }
 
         .alert-message {
-            display: none;
             margin-bottom: 10px;
         }
 
@@ -75,18 +73,16 @@
             }
         </div>
 
-        <!-- Add Expense Form -->
-        <form method="post" asp-action="AddCategory">
+        <!-- Add Category Form -->
+        <form method="post" asp-action="Create">
             <div class="mb-3">
-                <label asp-for="CategoryName" class="form-label">Title</label>
-                <input asp-for="CategoryName" class="form-control" placeholder="Enter Category Name" />
+                <label asp-for="CategoryName" class="form-label">Category Name</label>
+                <input asp-for="CategoryName" class="form-control" placeholder="Enter Category Name" required />
                 <span asp-validation-for="CategoryName" class="text-danger"></span>
             </div>
-            <div class="mb-3">
-                <label asp-for="DateCreated" class="form-label">Date</label>
-                <input asp-for="DateCreated" class="form-control" type="date" />
-                <span asp-validation-for="DateCreated" class="text-danger"></span>
-            </div>
+
+            <!-- Hidden field for UserName -->
+            <input type="hidden" asp-for="UserName" value="@User.Identity.Name" />
 
             <button type="submit" class="btn btn-primary">Add Category</button>
         </form>
@@ -94,13 +90,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation/1.19.3/jquery.validate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
     <script>
-
         $(document).ready(function () {
-            var successMessage = '@TempData["SuccessMessage"]';
-            var errorMessage = '@TempData["ErrorMessage"]';
+            var successMessage = @Html.Raw(Json.Serialize(TempData["SuccessMessage"]));
+            var errorMessage = @Html.Raw(Json.Serialize(TempData["ErrorMessage"]));
 
             if (successMessage) {
                 toastr.success(successMessage);

@@ -11,28 +11,28 @@ namespace ASI.Basecode.WebApp.Controllers
     public class ExpenseController : Controller
     {
         private readonly IExpenseService _expenseService;
+        private readonly ICategoryService _categoryService; // Add this line to inject category service
         private readonly ILogger<ExpenseController> _logger;
 
-        public ExpenseController(IExpenseService expenseService, ILogger<ExpenseController> logger)
+        public ExpenseController(IExpenseService expenseService, ICategoryService categoryService, ILogger<ExpenseController> logger)
         {
             _expenseService = expenseService;
+            _categoryService = categoryService; // Initialize the category service
             _logger = logger;
         }
 
-        
         private string GetLoggedInUserId()
         {
             return HttpContext.User.Identity.Name;
         }
 
-        
         public IActionResult Index()
         {
             try
             {
                 string userId = GetLoggedInUserId();
                 var expenses = _expenseService.GetAllExpenses()
-                                              .Where(e => e.UserName == userId) 
+                                              .Where(e => e.UserName == userId)
                                               .ToList();
 
                 return View(expenses);
@@ -44,7 +44,6 @@ namespace ASI.Basecode.WebApp.Controllers
             }
         }
 
-     
         public IActionResult ExpenseTable(string searchExpenseId = "")
         {
             try
@@ -54,7 +53,6 @@ namespace ASI.Basecode.WebApp.Controllers
                                               .Where(e => e.UserName == userId)
                                               .ToList();
 
-            
                 if (!string.IsNullOrEmpty(searchExpenseId) && int.TryParse(searchExpenseId, out int expenseId))
                 {
                     expenses = expenses.Where(e => e.ExpenseId == expenseId).ToList();
@@ -69,13 +67,17 @@ namespace ASI.Basecode.WebApp.Controllers
             }
         }
 
-       
         public IActionResult Create()
         {
+            var userName = GetLoggedInUserId(); // Get the logged-in user's username
+            var categories = _categoryService.GetAllCategory()
+                .Where(c => c.UserName == userName) // Filter categories by UserName
+                .ToList();
+
+            ViewBag.Categories = categories; // Pass categories to the view
             return View();
         }
 
-        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(Expense model)
@@ -84,7 +86,6 @@ namespace ASI.Basecode.WebApp.Controllers
             {
                 try
                 {
-                  
                     model.UserName = GetLoggedInUserId();
                     _expenseService.AddExpense(model);
                     TempData["SuccessMessage"] = "Expense added successfully!";
@@ -96,10 +97,17 @@ namespace ASI.Basecode.WebApp.Controllers
                     TempData["ErrorMessage"] = "Failed to add new expense. Please try again.";
                 }
             }
+
+            // Re-populate categories on validation error
+            var userName = GetLoggedInUserId();
+            var categories = _categoryService.GetAllCategory()
+                .Where(c => c.UserName == userName)
+                .ToList();
+
+            ViewBag.Categories = categories;
             return View(model);
         }
 
-    
         public IActionResult Edit(int id)
         {
             var expense = _expenseService.GetExpenseById(id);
@@ -108,10 +116,18 @@ namespace ASI.Basecode.WebApp.Controllers
                 TempData["ErrorMessage"] = "Expense not found or access denied.";
                 return RedirectToAction(nameof(ExpenseTable));
             }
+
+            // Pass categories to the view for editing
+            var userName = GetLoggedInUserId();
+            var categories = _categoryService.GetAllCategory()
+                .Where(c => c.UserName == userName)
+                .ToList();
+
+            ViewBag.Categories = categories;
+
             return View(expense);
         }
 
-     
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(Expense model)
@@ -136,10 +152,17 @@ namespace ASI.Basecode.WebApp.Controllers
                     TempData["ErrorMessage"] = "Failed to update expense. Please try again.";
                 }
             }
+
+            // Re-populate categories on validation error
+            var userName = GetLoggedInUserId();
+            var categories = _categoryService.GetAllCategory()
+                .Where(c => c.UserName == userName)
+                .ToList();
+
+            ViewBag.Categories = categories;
             return View(model);
         }
 
-       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(int id)
@@ -165,7 +188,6 @@ namespace ASI.Basecode.WebApp.Controllers
             }
         }
 
-     
         public IActionResult Details(int id)
         {
             var expense = _expenseService.GetExpenseById(id);
