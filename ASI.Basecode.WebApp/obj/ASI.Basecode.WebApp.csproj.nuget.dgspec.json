@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj": {}
+    "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
+    "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
+        "projectUniqueName": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
         "projectName": "ASI.Basecode.Data",
-        "projectPath": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
-        "packagesPath": "C:\\Users\\solon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Data\\obj\\",
+        "projectPath": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
+        "packagesPath": "C:\\Users\\Aldrich\\.nuget\\packages\\",
+        "outputPath": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\solon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aldrich\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -108,24 +109,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
+    "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
+        "projectUniqueName": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
         "projectName": "ASI.Basecode.Resources",
-        "projectPath": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
-        "packagesPath": "C:\\Users\\solon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Resources\\obj\\",
+        "projectPath": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
+        "packagesPath": "C:\\Users\\Aldrich\\.nuget\\packages\\",
+        "outputPath": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Resources\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\solon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aldrich\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -134,6 +135,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -182,24 +184,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj": {
+    "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj",
+        "projectUniqueName": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj",
         "projectName": "ASI.Basecode.Services",
-        "projectPath": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj",
-        "packagesPath": "C:\\Users\\solon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Services\\obj\\",
+        "projectPath": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj",
+        "packagesPath": "C:\\Users\\Aldrich\\.nuget\\packages\\",
+        "outputPath": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\solon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aldrich\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -208,17 +210,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
-                "projectPath": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj"
+              "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
+                "projectPath": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj"
               },
-              "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
-                "projectPath": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj"
+              "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
+                "projectPath": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj"
               }
             }
           }
@@ -295,24 +298,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj": {
+    "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
+        "projectUniqueName": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
         "projectName": "ASI.Basecode.WebApp",
-        "projectPath": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
-        "packagesPath": "C:\\Users\\solon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.WebApp\\obj\\",
+        "projectPath": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
+        "packagesPath": "C:\\Users\\Aldrich\\.nuget\\packages\\",
+        "outputPath": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\solon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aldrich\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -321,20 +324,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
-                "projectPath": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj"
+              "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
+                "projectPath": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj"
               },
-              "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
-                "projectPath": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj"
+              "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
+                "projectPath": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj"
               },
-              "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj": {
-                "projectPath": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj"
+              "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj": {
+                "projectPath": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj"
               }
             }
           }
@@ -440,7 +444,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

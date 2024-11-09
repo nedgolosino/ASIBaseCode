@@ -3034,23 +3034,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\solon\\.nuget\\packages\\": {},
+    "C:\\Users\\Aldrich\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\solon\\Source\\Repos\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
+      "projectUniqueName": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
       "projectName": "ASI.Basecode.Data",
-      "projectPath": "C:\\Users\\solon\\Source\\Repos\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
-      "packagesPath": "C:\\Users\\solon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\solon\\Source\\Repos\\ASIBaseCode\\ASI.Basecode.Data\\obj\\",
+      "projectPath": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
+      "packagesPath": "C:\\Users\\Aldrich\\.nuget\\packages\\",
+      "outputPath": "D:\\Alliance\\ASIBaseCode\\ASIBaseCode\\ASI.Basecode.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\solon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aldrich\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3059,6 +3059,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3141,7 +3142,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }
