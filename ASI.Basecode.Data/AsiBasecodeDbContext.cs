@@ -38,15 +38,30 @@ namespace ASI.Basecode.Data
                       .HasMaxLength(50) // Ensure this matches Category.UserName
                       .IsUnicode(false);
 
-                entity.Property(e => e.Name)
+                entity.Property(e => e.FirstName)
                       .IsRequired()
                       .HasMaxLength(50)
                       .IsUnicode(false);
+
+                entity.Property(e => e.LastName)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Email)
+                .IsRequired()
+                .HasMaxLength(50)
+                .IsUnicode(false);
 
                 entity.Property(e => e.Password)
                       .IsRequired()
                       .HasMaxLength(50)
                       .IsUnicode(false);
+
+                entity.Property(e => e.ConfirmPassword)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.CreatedBy)
                       .HasMaxLength(50)
@@ -114,7 +129,7 @@ namespace ASI.Basecode.Data
             // Category Entity Configuration
             modelBuilder.Entity<Category>(entity =>
             {
-                
+
 
                 entity.HasKey(e => e.CategoryId);
 
