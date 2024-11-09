@@ -9,7 +9,7 @@
 [Dd]ebug/
 [Rr]elease/
 [Bb]in/
-[Oo]bj/
+**/obj/    # Ignore all obj directories across the project
 [Ll]og/
 [Ll]ogs/
 
