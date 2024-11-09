@@ -15,12 +15,21 @@
     @RenderSection("Styles", required: false)
 </head>
 <body>
-    @Html.Partial("_Header")
-    <div class="">
-        <main role="main">
-            @RenderBody()
+    <div class="flex flex-row h-screen">
+        @if (!(ViewData["IsLoginPage"] is bool isLoginPage && isLoginPage))
+        {
+            <div>
+                @Html.Partial("Navbar")
+            </div>
+        }
+        <main role="main" class="flex-1">
+           
+                @RenderBody()
         </main>
     </div>
+
+
+
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
