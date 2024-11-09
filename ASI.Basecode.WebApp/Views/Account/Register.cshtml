@@ -5,47 +5,49 @@
     ViewData["Title"] = "Register Page";
 }
 <div class="bg-gray-100 flex items-center justify-center h-screen">
-    <div class="flex w-3/4 max-w-4xl bg-white shadow-lg rounded-lg overflow-hidden">
+    <div class="flex w-full h-full bg-white overflow-hidden">
         <!-- Right Section (Form) -->
-        <div class="w-1/2 p-8 bg-[#ECE7E1]">
-            <h2 class="text-3xl font-bold text-[#4D7766] mb-6 text-center">Register</h2>
-            <form method="post" action="/Account/Login" id="loginForm" class="space-y-6">
-                <div class="flex items-center justify-between gap-x-2">
-                    <div class="">
-                        <label class="block text-sm font-medium text-gray-700" for="name">First Name</label>
-                        <input cla type="text" id="name" class="mt-1 block w-full px-2 py-2 border-solid border-2 border-gray-400 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600"
-                               asp-for="Name" />
-                        <span asp-validation-for="Name" class="text-danger"></span>
+        <div class="w-1/2 p-24 bg-[#ECE7E1]">
+            <div class="w-full max-w-md ml-16">
+                <h2 class="text-3xl font-bold text-[#4D7766] mb-6 text-center">Register</h2>
+                <form method="post" action="/Account/Login" id="loginForm" class="space-y-6">
+                    <div class="flex items-center justify-between gap-x-2">
+                        <div class="">
+                            <label class="block text-sm font-medium text-gray-700" for="name">First Name</label>
+                            <input cla type="text" id="name" class="mt-1 block w-full px-2 py-2 border-solid border-2 border-gray-400 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600"
+                                   asp-for="Name" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="">
+                            <label class="block text-sm font-medium text-gray-700" for="name">Last Name</label>
+                            <input type="text" id="name" class="mt-1 block w-full px-2 py-2 border-solid border-2 border-gray-400 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600"
+                                   asp-for="Name" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
                     </div>
-                    <div class="">
-                        <label class="block text-sm font-medium text-gray-700" for="name">Last Name</label>
-                        <input type="text" id="name" class="mt-1 block w-full px-2 py-2 border-solid border-2 border-gray-400 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600"
-                               asp-for="Name" />
-                        <span asp-validation-for="Name" class="text-danger"></span>
+                    <div>
+                        <label for="username" class="block text-sm font-medium text-gray-700">Email Address</label>
+                        <input asp-for="UserName" type="text" id="username" name="username" class="mt-1 block w-full px-2 py-2 border-solid border-2 border-gray-400 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600">
+                        <span asp-validation-for="UserName" class="text-danger"></span>
                     </div>
+                    <div>
+                        <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+                        <input asp-for="UserName" type="text" id="username" name="username" class="mt-1 block w-full px-2 py-2 border-solid border-2 border-gray-400 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600">
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                        <input asp-for="Password" type="password" id="password" name="password" class="mt-1 block w-full bg-transparent px-2 py-2 border-solid border-2 border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600">
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="w-full py-2 bg-[#4D7766] text-white font-semibold rounded-md hover:bg-teal-800 transition duration-200">Register</button>
+                </form>
+                <div class="border-b-2 border-gray-400 mt-10 mb-2 mx-2">
                 </div>
-                <div>
-                    <label for="username" class="block text-sm font-medium text-gray-700">Email Address</label>
-                    <input asp-for="UserName" type="text" id="username" name="username" class="mt-1 block w-full px-2 py-2 border-solid border-2 border-gray-400 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600">
-                    <span asp-validation-for="UserName" class="text-danger"></span>
+                <div class="mt-4 text-center">
+                    <span class="text-sm text-black">Already have an account? </span>
+                    <a asp-controller="Account" asp-action="Login" class="text-sm text-[#4D7766] font-bold hover:underline">Log In</a>
                 </div>
-                <div>
-                    <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
-                    <input asp-for="UserName" type="text" id="username" name="username" class="mt-1 block w-full px-2 py-2 border-solid border-2 border-gray-400 bg-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600">
-                    <span asp-validation-for="UserName" class="text-danger"></span>
-                </div>
-                <div>
-                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-                    <input asp-for="Password" type="password" id="password" name="password" class="mt-1 block w-full bg-transparent px-2 py-2 border-solid border-2 border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600">
-                    <span asp-validation-for="Password" class="text-danger"></span>
-                </div>
-                <button type="submit" class="w-full py-2 bg-[#4D7766] text-white font-semibold rounded-md hover:bg-teal-800 transition duration-200">Register</button>
-            </form>
-            <div class="border-b-2 border-gray-400 mt-10 mb-2 mx-2">
-            </div>
-            <div class="mt-4 text-center">
-                <span class="text-sm text-black">Already have an account? </span>
-                <a asp-controller="Account" asp-action="Login" class="text-sm text-[#4D7766] font-bold hover:underline">Log In</a>
             </div>
         </div>
         <!-- Left Section (Logo) -->
