@@ -61,3 +61,4 @@ node_modules/
 # Additional Visual Studio files to ignore
 **/.vs/**/*
 !**/.vs/lastbuildstate
+/.vs
