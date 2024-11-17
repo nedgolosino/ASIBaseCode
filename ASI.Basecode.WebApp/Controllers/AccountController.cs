@@ -61,7 +61,8 @@ namespace ASI.Basecode.WebApp.Controllers
             if (loginResult == LoginResult.Success)
             {
                 await _signInManager.SignInAsync(user);
-                HttpContext.Session.SetString("UserName", user.UserName);
+                HttpContext.Session.SetString("UserName", user.FirstName + " " + user.LastName);
+
                 return RedirectToAction("Index", "Home");
             }
 

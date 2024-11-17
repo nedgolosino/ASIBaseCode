@@ -1,0 +1,141 @@
+﻿@model ASI.Basecode.Data.Models.User
+@{
+    ViewData["Title"] = "Account Details";
+}
+
+<div class="container mt-5" style="font-family: Arial, sans-serif; background-color: #ECE7E1; border-radius: 8px; padding: 20px;">
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <h3 class="mb-4" style="color: #4D7766;">Account Details</h3>
+    <form asp-action="UpdateAccount" method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="Id" />
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-4 text-center mb-4">
+                <div class="profile-picture-container">
+                    @if (!string.IsNullOrEmpty(Model.ProfilePicture))
+                    {
+                        <img src="@Url.Content(Model.ProfilePicture)" class="rounded-circle profile-picture mb-3"
+                             alt="Profile Picture" style="width: 200px; height: 200px; object-fit: cover; border: 3px solid #4D7766;"
+                             id="profilePreview" />
+                    }
+                    else
+                    {
+                        <img src="~/img/profile-logo.png" class="rounded-circle profile-picture mb-3"
+                             alt="Default Profile" style="width: 200px; height: 200px; object-fit: cover; border: 3px solid #4D7766;"
+                             id="profilePreview" />
+                    }
+                    <div class="mb-3">
+                        <label class="btn btn-outline-secondary" style="cursor: pointer;">
+                            Choose Photo
+                            <input type="file" name="ProfilePicture" id="profilePictureInput"
+                                   class="d-none" accept="image/*" onchange="previewImage(this);" />
+                        </label>
+                        <div class="small text-muted mt-1">
+                            Recommended: Square image, max 5MB<br>
+                            Supported formats: JPG, PNG
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-8">
+                <div class="row">
+                    <!-- Username -->
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="UserName" class="form-label">Username</label>
+                        <input asp-for="UserName" class="form-control" style="background-color: #F5F5F5;" readonly />
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Email" class="form-label">Email Address</label>
+                        <input asp-for="Email" class="form-control" style="background-color: #F5F5F5;" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- First Name -->
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="FirstName" class="form-label">First Name</label>
+                        <input asp-for="FirstName" class="form-control" style="background-color: #F5F5F5;" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+
+                    <!-- Last Name -->
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="LastName" class="form-label">Last Name</label>
+                        <input asp-for="LastName" class="form-control" style="background-color: #F5F5F5;" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-success" style="background-color: #4D7766; border-color: #4D7766;">Update Profile</button>
+            </div>
+        </div>
+    </form>
+
+    <hr class="my-5">
+
+    <h3 class="mb-4" style="color: #4D7766;">Change Password</h3>
+    <form asp-action="ChangePassword" method="post">
+        <div class="row">
+            <!-- Current Password -->
+            <div class="col-md-4 mb-3">
+                <label for="Password" class="form-label">Current Password</label>
+                <input type="password" name="Password" id="Password" class="form-control" required />
+            </div>
+
+            <!-- New Password -->
+            <div class="col-md-4 mb-3">
+                <label for="newPassword" class="form-label">New Password</label>
+                <input type="password" name="newPassword" id="newPassword" class="form-control" required />
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="col-md-4 mb-3">
+                <label for="ConfirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" name="confirmPassword" id="ConfirmPassword" class="form-control" required />
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-success" style="background-color: #4D7766; border-color: #4D7766;">Change Password</button>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        function previewImage(input) {
+            const preview = document.getElementById('profilePreview');
+            const file = input.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    preview.src = e.target.result;
+                };
+
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+}

@@ -63,6 +63,12 @@ namespace ASI.Basecode.Data
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
+                entity.Property(e => e.ProfilePicture)
+                .HasMaxLength(255) // Adjust the length based on your file paths
+                .IsUnicode(false)  // If it's a URL or file path, Unicode is not necessary
+                .HasDefaultValue(null); // O
+
+
                 entity.Property(e => e.CreatedBy)
                       .HasMaxLength(50)
                       .IsUnicode(false);
@@ -77,12 +83,17 @@ namespace ASI.Basecode.Data
                 entity.Property(e => e.UpdatedTime)
                       .HasColumnType("datetime");
 
+           
+
+
                 // Configure relationship between User and Expenses
                 entity.HasMany(u => u.Expenses)
                       .WithOne(e => e.User)
                       .HasForeignKey(e => e.UserName)
                       .HasPrincipalKey(u => u.UserName)
                       .OnDelete(DeleteBehavior.Cascade);
+
+
             });
 
             // Expense Entity Configuration

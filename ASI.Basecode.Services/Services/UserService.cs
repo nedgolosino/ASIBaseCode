@@ -7,6 +7,7 @@ using AutoMapper;
 using System;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using static ASI.Basecode.Resources.Constants.Enums;
 
 namespace ASI.Basecode.Services.Services
@@ -50,6 +51,11 @@ namespace ASI.Basecode.Services.Services
             {
                 throw new InvalidDataException(Resources.Messages.Errors.UserExists);
             }
+        }
+
+        public Task GetUserByUserNameAsync(string userName)
+        {
+            throw new NotImplementedException();
         }
     }
 }

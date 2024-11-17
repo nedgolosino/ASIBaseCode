@@ -37,6 +37,14 @@
       "PackagePath": "staticwebassets\\html\\assets\\js\\plugins\\jquery-slimscroll\\jquery.slimscroll.min.js"
     },
     {
+      "Id": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.WebApp\\wwwroot\\images\\1179027899_926a5245f7_b.jpg",
+      "PackagePath": "staticwebassets\\images\\1179027899_926a5245f7_b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.WebApp\\wwwroot\\images\\Angel.jpg",
+      "PackagePath": "staticwebassets\\images\\Angel.jpg"
+    },
+    {
       "Id": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.WebApp\\wwwroot\\img\\LiveIT.png",
       "PackagePath": "staticwebassets\\img\\LiveIT.png"
     },
@@ -239,6 +247,22 @@
     {
       "Id": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.WebApp\\wwwroot\\lib\\react\\dist\\react.profiling.min.js",
       "PackagePath": "staticwebassets\\lib\\react\\dist\\react.profiling.min.js"
+    },
+    {
+      "Id": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.WebApp\\wwwroot\\uploads\\profiles\\9c0d092a-a543-4cff-848e-92ca1a69492a_1179027899_926a5245f7_b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\9c0d092a-a543-4cff-848e-92ca1a69492a_1179027899_926a5245f7_b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.WebApp\\wwwroot\\uploads\\profiles\\a0aaf866-decc-42bd-bb13-e125f235ba27_1179027899_926a5245f7_b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\a0aaf866-decc-42bd-bb13-e125f235ba27_1179027899_926a5245f7_b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.WebApp\\wwwroot\\uploads\\profiles\\f12cc90b-9d3c-4b4a-897c-833c680f0d2d_dereckg.webp",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\f12cc90b-9d3c-4b4a-897c-833c680f0d2d_dereckg.webp"
+    },
+    {
+      "Id": "C:\\Users\\solon\\source\\repos\\ASIBaseCode\\ASI.Basecode.WebApp\\wwwroot\\uploads\\profiles\\profile-logo.png",
+      "PackagePath": "staticwebassets\\uploads\\profiles\\profile-logo.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ASI.Basecode.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",

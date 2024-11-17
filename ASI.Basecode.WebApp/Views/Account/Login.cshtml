@@ -2,7 +2,7 @@
 @using static ASI.Basecode.Resources.Views.Screen
 @{
     ViewBag.LoginView = true;
-    ViewData["Title"] = "Login Page";
+    ViewData["IsLoginPage"] = true;
 }
 <div>
     @Html.AntiForgeryToken()
