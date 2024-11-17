@@ -2,7 +2,7 @@
 @using static ASI.Basecode.Resources.Views.Screen
 @{
     ViewBag.LoginView = true;
-    ViewData["Title"] = "Login Page";
+    ViewData["IsLoginPage"] = true;
 }
 <div>
     @Html.AntiForgeryToken()
@@ -12,10 +12,9 @@
     <div class="flex w-full h-full bg-white overflow-hidden">
         <!-- Left Section (Logo) -->
         <div class="w-1/2 bg-[#4D7766] p-8 flex items-center justify-center">
-            <div class="text-center">
-                <h1 class="text-5xl font-bold text-[#ECE7E1]">.budg<span class="text-[#ECE7E1]">ET</span></h1>
-                <p class="text-[#ECE7E1] mt-2">expense tracker</p>
-            </div>
+            <img src="~/img/logo2.png"
+                 class="h-auto w-auto"
+                 alt="logo">
         </div>
 
         <!-- Right Section (Form) -->

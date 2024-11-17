@@ -44,20 +44,28 @@ namespace ASI.Basecode.WebApp.Controllers
             }
         }
 
-        public IActionResult ExpenseTable(string searchExpenseId = "")
+        public IActionResult ExpenseTable(int page = 1, int pageSize = 7)
         {
             try
             {
                 string userId = GetLoggedInUserId();
-                var expenses = _expenseService.GetAllExpenses()
-                                              .Where(e => e.UserName == userId)
-                                              .ToList();
 
-                if (!string.IsNullOrEmpty(searchExpenseId) && int.TryParse(searchExpenseId, out int expenseId))
-                {
-                    expenses = expenses.Where(e => e.ExpenseId == expenseId).ToList();
-                }
+                // Retrieve all expenses for the logged-in user
+                var totalExpenses = _expenseService.GetAllExpenses()
+                                                   .Where(e => e.UserName == userId)
+                                                   .ToList();
 
+                // Apply a limit to the records per page (limit to 7)
+                var expenses = totalExpenses.Skip((page - 1) * pageSize)
+                                            .Take(pageSize)  // Limit to 7 records
+                                            .ToList();
+
+                // Calculate total pages
+                var totalPages = (int)Math.Ceiling((double)totalExpenses.Count / pageSize);
+
+                // Pass expenses, current page, and total pages to the view
+                ViewData["CurrentPage"] = page;
+                ViewData["TotalPages"] = totalPages;
                 return View(expenses);
             }
             catch (Exception ex)
@@ -66,6 +74,9 @@ namespace ASI.Basecode.WebApp.Controllers
                 return View("Error", new ErrorViewModel { ErrorMessage = "Failed to load expense table." });
             }
         }
+
+
+
 
         public IActionResult Create()
         {
@@ -170,7 +181,7 @@ namespace ASI.Basecode.WebApp.Controllers
             try
             {
                 var expense = _expenseService.GetExpenseById(id);
-                if (!HasAccessToExpense(expense))
+                if (expense == null || expense.UserName != GetLoggedInUserId())
                 {
                     TempData["ErrorMessage"] = "Expense not found or access denied.";
                     return RedirectToAction(nameof(ExpenseTable));
@@ -178,14 +189,13 @@ namespace ASI.Basecode.WebApp.Controllers
 
                 _expenseService.DeleteExpense(id);
                 TempData["SuccessMessage"] = "Expense deleted successfully!";
-                return RedirectToAction(nameof(ExpenseTable));
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Failed to delete expense.");
                 TempData["ErrorMessage"] = "Failed to delete expense. Please try again.";
-                return RedirectToAction(nameof(ExpenseTable));
             }
+            return RedirectToAction(nameof(ExpenseTable));
         }
 
         public IActionResult Details(int id)
