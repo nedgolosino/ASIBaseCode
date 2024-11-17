@@ -62,7 +62,7 @@ namespace ASI.Basecode.WebApp.Controllers
             {
                 await _signInManager.SignInAsync(user);
                 HttpContext.Session.SetString("UserName", user.UserName);
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("ExpenseTable", "Expense");
             }
 
             TempData["ErrorMessage"] = "Incorrect username or password.";

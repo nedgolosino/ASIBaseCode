@@ -24,31 +24,29 @@ namespace ASI.Basecode.WebApp.Controllers
             return HttpContext.User.Identity.Name;
         }
 
-        public IActionResult Index(string searchCategoryName = "", int? searchCategoryId = null)
+        public IActionResult Index(int page = 1, int pageSize = 7)
         {
             try
             {
                 string userId = GetLoggedInUserId();
-                var categories = _categoryService.GetAllCategory()
-                                              .Where(c => c.UserName == userId);
 
-                // Store search values for the view
-                ViewBag.SearchCategoryName = searchCategoryName;
-                ViewBag.SearchCategoryId = searchCategoryId;
+                // Fetch the total count of categories
+                var totalCategories = _categoryService.GetAllCategory()
+                                                       .Where(c => c.UserName == userId)
+                                                       .ToList();
 
-                // Apply filters
-                if (!string.IsNullOrEmpty(searchCategoryName))
-                {
-                    categories = categories.Where(c => c.CategoryName.Contains(searchCategoryName,
-                        StringComparison.OrdinalIgnoreCase));
-                }
+                // Apply a limit to the records per page (limit to 7)
+                var categories = totalCategories.Skip((page - 1) * pageSize)
+                                                .Take(pageSize)  // Limit to 7 records
+                                                .ToList();
 
-                if (searchCategoryId.HasValue)
-                {
-                    categories = categories.Where(c => c.CategoryId == searchCategoryId);
-                }
+                // Calculate total pages
+                var totalPages = (int)Math.Ceiling((double)totalCategories.Count / pageSize);
 
-                return View(categories.ToList());
+                // Pass categories, current page, and total pages to the view
+                ViewData["CurrentPage"] = page;
+                ViewData["TotalPages"] = totalPages;
+                return View(categories);
             }
             catch (Exception ex)
             {

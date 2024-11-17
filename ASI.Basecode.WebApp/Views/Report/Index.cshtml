@@ -1,0 +1,116 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="w-full bg-[#ECE7E1] h-screen px-8">
+    <div class="flex-1 p-4 ">
+        <div class="flex justify-end mb-4">
+            <img src="~/img/logo.png"
+                 class="h-auto w-auto"
+                 alt="logo">
+        </div>
+    </div>
+    <div class="overflow-y-auto max-h-[calc(100vh-128px)] scrollbar-hidden">
+        <!-- Added max height for scrollable area -->
+        <div class="border-2 border-gray-400 p-4 rounded-xl">
+            <div class="mx-3 my-3">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-2xl font-bold text-[#4D7766]">Expense Summary</h2>
+                    <button class="bg-[#4D7766] rounded-lg p-2">
+                        <span class="text-base text-[#ECE7E1]">Generate Report</span>
+                    </button>
+                </div>
+
+                <div class="border-b-2 border-gray-400 mb-4"></div>
+                <div class="flex items-center justify-end gap-x-2">
+                    <select class="border-2 border-gray-400 rounded-lg p-2 bg-transparent">
+                        <option>Car Maintenance</option>
+                    </select>
+                    <input class="px-2 py-2 border-2 border-gray-400 bg-transparent rounded-md" type="date" />
+                </div>
+                <div class="flex justify-evenly items-center mt-4">
+                    <div class="flex flex-col items-center">
+                        <p class="text-3xl font-bold text-[#4D7766] w-1/2">Car Maintenance</p>
+                    </div>
+                    <div class="border-r-2 border-gray-400 h-32"></div>
+                    <div class="flex flex-col items-center">
+                        <p class="text-3xl text-black">Total Expenses</p>
+                        <div class="mt-4">
+                            <p class="text-3xl font-bold text-gray-600">Php</p>
+                            <p class="text-3xl font-bold text-[#4D7766]">35,500.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-2 border-gray-400 p-4 rounded-xl mt-4 mb-8">
+            <div class="mx-3 my-3">
+                <h2 class="text-2xl font-bold text-[#4D7766] mb-4">Expense Trends</h2>
+                <div class="border-b-2 border-gray-400 mb-4"></div>
+            </div>
+            <div>
+                <!-- Line chart display -->
+                <canvas id="lineChart" class="w-full h-64"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .scrollbar-hidden {
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        scrollbar-width: none; /* Firefox */
+    }
+
+        .scrollbar-hidden::-webkit-scrollbar {
+            display: none; /* WebKit browsers */
+        }
+</style>
+
+
+<!-- Include Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Initialize the line chart
+    const ctx = document.getElementById('lineChart').getContext('2d');
+    const lineChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'], // Replace with dynamic data if needed
+            datasets: [{
+                label: 'Expenses Over Time',
+                data: [5000, 10000, 7500, 12000, 8500, 15000, 13500], // Replace with dynamic data
+                borderColor: '#4D7766',
+                backgroundColor: 'rgba(77, 119, 102, 0.2)',
+                borderWidth: 2,
+                fill: true,
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'top',
+                },
+            },
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Months'
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Expenses (Php)'
+                    },
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
